@@ -1,1 +1,1 @@
-# workday-scheduler
+# work-day-scheduler
