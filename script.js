@@ -35,10 +35,10 @@ $(document).ready(function () {
             }
         }
         console.log($(".saveBtn"))
-        $(".saveBtn").on("click", function () {
+        $("button").on("click", function () {
             console.log("somestring")
-            var inputValue = $(this).siblings(".text-box").val()
-            var id = $(this).parent().attr("id")
+            var inputValue = $(this).siblings("textarea").val()
+            var id = $(this).siblings("div").attr("id")
             localStorage.setItem(id, inputValue)
             console.log(id)
             console.log(inputValue)
@@ -53,6 +53,12 @@ $(document).ready(function () {
         $("#15, .text-box").val(localStorage.getItem("15"))
         $("#16, .text-box").val(localStorage.getItem("16"))
         $("#17, .text-box").val(localStorage.getItem("17"))
+
+        if (localStorage.getItem("9") === null) {
+            $("#9, .text-box").val(localStorage.getItem("9"))
+        } else {
+            $("#9, .text-box").val(localStorage.getItem("9"))
+        }
 
 
 
@@ -118,24 +124,7 @@ $(document).ready(function () {
         //     };
         // 
     });
-    console.log("hello")
-    console.log($(".saveBtn"))
-    $(".saveBtn").on("click", function () {
-        console.log("somestring")
-        var inputValue = $(this).siblings(".text-box").val()
-        var id = $(this).parent().attr("id")
-        localStorage.setItem(id, inputValue)
-    });
 
-    $("#9, .text-box").val(localStorage.getItem("9"))
-    $("#10, .text-box").val(localStorage.getItem("10"))
-    $("#11, .text-box").val(localStorage.getItem("11"))
-    $("#12, .text-box").val(localStorage.getItem("12"))
-    $("#13, .text-box").val(localStorage.getItem("13"))
-    $("#14, .text-box").val(localStorage.getItem("14"))
-    $("#15, .text-box").val(localStorage.getItem("15"))
-    $("#16, .text-box").val(localStorage.getItem("16"))
-    $("#17, .text-box").val(localStorage.getItem("17"))
 
 
 
