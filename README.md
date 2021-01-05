@@ -20,7 +20,7 @@ ______________________________________________________________________________
 
 #### **Code Snippet**
 
-The color coded time blocks are accomplished using a combination of variables, jQuery selectors, and a for loop. The jQuery selector identifies the class of "id-md-2" in the HTML which holds the differnt times of the day. The following for loop interates through those times and compares it the currentTimeEl which is defined by a moment.js function. I navigated through the DOM tree to arrive at differnet elements. In the example below, I called upon the sibling of the current time element to isolate the class of "col-md-9" w
+The color coded time blocks are accomplished using a combination of variables, jQuery selectors, and a for loop. The jQuery selector identifies the class of "id-md-2" in the HTML which holds the differnt times of the day. The following for loop interates through those times and compares it the currentTimeEl which is defined by a moment.js function. I navigated through the DOM tree to arrive at different elements.
 
 ```
 var allTimes = $(".col-md-2")
