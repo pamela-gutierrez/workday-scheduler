@@ -54,78 +54,128 @@ $(document).ready(function () {
         $("#16, .text-box").val(localStorage.getItem("16"))
         $("#17, .text-box").val(localStorage.getItem("17"))
 
-        if (localStorage.getItem("9") === null) {
-            $("#9, .text-box").val(localStorage.getItem("9"))
-        } else {
-            $("#9, .text-box").val(localStorage.getItem("9"))
-        }
 
-
-
-        // $(".col-md-2").each(index => {
-        //     console.log(this)
-        // });
-        // add variables for every hour of the day
-        // var 9am = "9aminput"
-
-        // var counter = 1;
-
-        // const is the biggest, var is the medium, and let is the smallest. 
-        // if else statements to determine past and present
-        // 
-
-        // var 9am ="textarea entry"
-        // textarea.text(valueofuserinput)
-        // val().trim()
-
-        // if (time counter1 < timecounter2) you gonna make it past by adding class past
-
-        // make sure to include present hour
-
-        // text 
-        //  put all the times in an array 
-
-
-        // for (var i=0; i < 
-
-
-
-        // Distinguish past, present, and future.
-        // In order to do this, compare past, present, and future time to current time (to each other
-        // compare past timet to present/current time to determine to make it time 
-        // name current time by making current time a variable
-        // var currentTime will equal moment().hour()
-
-        // console.log(currentTime)
-        // the console log will show 18 (the current time when I'm working on this)
-        // if time block is smaller than current time, it's in the past.
-        // if time block is larger than current time, it's in the future
-        // if time block is past, add .past class to "text-box" which has been defined in HTML
-        // if time block is in the future, add .future class to "text-box" which has been defined in HTML
-        // if time block is equal to current time, add .present to "text-box" which has been defined in HTML
-
-        // var str =
-
-
-        // var time = $("#9");
-        // var hour = $(".hour1")
-        // console.log(time)
-        // console.log(hour)
-        // let str = "9";
-        // var num = str * 1
-        // function toNumber(str) {
-        //     return str * 1
-        //     console.log(num)
-        // }
-
-        // function change() {
-        //     switch () {
-        //         case "09 A.M.": return 9;
-        //     };
-        // 
     });
 
 
+    if (localStorage.getItem("9") === null) {
+        // $("#9").siblings("textarea").text(localStorage.getItem("9"));
+    } else {
+        $("#9").siblings("textarea").text(localStorage.getItem("9"));
+    }
+
+    if (localStorage.getItem("10") === null) {
+        // $("#9").siblings("textarea").text(localStorage.getItem("9"));
+    } else {
+        $("#10").siblings("textarea").text(localStorage.getItem("10"));
+    }
+    if (localStorage.getItem("11") === null) {
+        // $("#9").siblings("textarea").text(localStorage.getItem("9"));
+    } else {
+        $("#11").siblings("textarea").text(localStorage.getItem("11"));
+    }
+    if (localStorage.getItem("9") === null) {
+        // $("#9").siblings("textarea").text(localStorage.getItem("9"));
+    } else {
+        $("#12").siblings("textarea").text(localStorage.getItem("12"));
+    }
+    if (localStorage.getItem("13") === null) {
+        // $("#9").siblings("textarea").text(localStorage.getItem("9"));
+    } else {
+        $("#13").siblings("textarea").text(localStorage.getItem("13"));
+    }
+    if (localStorage.getItem("14") === null) {
+
+    } else {
+        $("#14").siblings("textarea").text(localStorage.getItem(14));
+    }
+    if (localStorage.getItem("15") === null) {
+        // $("#9").siblings("textarea").text(localStorage.getItem("9"));
+    } else {
+        $("#15").siblings("textarea").text(localStorage.getItem("15"));
+    }
+    if (localStorage.getItem("16") === null) {
+        // $("#9").siblings("textarea").text(localStorage.getItem("9"));
+    } else {
+        $("#16").siblings("textarea").text(localStorage.getItem("16"));
+    }
+    if (localStorage.getItem("17") === null) {
+        // $("#9").siblings("textarea").text(localStorage.getItem("9"));
+    } else {
+        $("#17").siblings("textarea").text(localStorage.getItem("17"));
+    }
+
+
+
+    // if (localStorage.getItem(id) === null) {
+    //     $("#9, .text-box").val(localStorage.getItem("9"));
+    // } else {
+    //     $(".text-box").val(inputValue);
+    // }
+
+
+
+    // $(".col-md-2").each(index => {
+    //     console.log(this)
+    // });
+    // add variables for every hour of the day
+    // var 9am = "9aminput"
+
+    // var counter = 1;
+
+    // const is the biggest, var is the medium, and let is the smallest. 
+    // if else statements to determine past and present
+    // 
+
+    // var 9am ="textarea entry"
+    // textarea.text(valueofuserinput)
+    // val().trim()
+
+    // if (time counter1 < timecounter2) you gonna make it past by adding class past
+
+    // make sure to include present hour
+
+    // text 
+    //  put all the times in an array 
+
+
+    // for (var i=0; i < 
+
+
+
+    // Distinguish past, present, and future.
+    // In order to do this, compare past, present, and future time to current time (to each other
+    // compare past timet to present/current time to determine to make it time 
+    // name current time by making current time a variable
+    // var currentTime will equal moment().hour()
+
+    // console.log(currentTime)
+    // the console log will show 18 (the current time when I'm working on this)
+    // if time block is smaller than current time, it's in the past.
+    // if time block is larger than current time, it's in the future
+    // if time block is past, add .past class to "text-box" which has been defined in HTML
+    // if time block is in the future, add .future class to "text-box" which has been defined in HTML
+    // if time block is equal to current time, add .present to "text-box" which has been defined in HTML
+
+    // var str =
+
+
+    // var time = $("#9");
+    // var hour = $(".hour1")
+    // console.log(time)
+    // console.log(hour)
+    // let str = "9";
+    // var num = str * 1
+    // function toNumber(str) {
+    //     return str * 1
+    //     console.log(num)
+    // }
+
+    // function change() {
+    //     switch () {
+    //         case "09 A.M.": return 9;
+    //     };
+    // 
 
 
     // $(".col-md-2").each(index => {

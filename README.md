@@ -1,34 +1,34 @@
 # Workday Scheduler
 
-This application is a work day scheduler intended to help with the user organize their workday during the typical workday hours of 9am to 5pm. Furthermore, the 
+This application is a work day scheduler intended to help the user organize their workday during the typical business hours of 9am to 5pm. 
 
-![Site](assets/images/homework1screenshot.png)
+![Site] (INSERT PIC HERE)
 
 ## **Built With**
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Git Hub](https://github.com/)
+* [Moment.js](https://momentjs.com/)
 *  Git - used to track changes to code
 ______________________________________________________________________________
   
 ### **Summary**
-This application promotes the Horiseon Social Media Marketing agency. The specialize in SEO, particularly search engine optimization, online reputation management, and social media marketing. 
 
->The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+As a single-day work day scheduler it is important that the application offers maximum efficiency to the user. To help accomplish this, the different hours of the day are color-coded to reflect if they are in the past, present, or future. The application can also store the data even after the page is refreshed allowing the user to update it multiple times throughout the day. The date and time of the lastest refresh is displayed at the top of the scheduler when the page first loads.
 
 ______________________________________________________________________________
 
 #### **Code Snippet**
 
-Condensed multipe id tags to create cleaner, shorter css code.
+The color coded time blocks are accomplished using a combination of variables, jQuery selectors, and a for loop. The jQuery selector identifies the class of "id-md-2" in the HTML which holds the differnt times of the day. The following for loop interates through those times and compares it the currentTimeEl which is defined by a moment.js function. I navigated through the DOM tree to arrive at differnet elements. In the example below, I called upon the sibling of the current time element to isolate the class of "col-md-9" w
 
-```#search-engine-optimization, #online-reputation-management, #social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+```
+var allTimes = $(".col-md-2")
+for (var i = 0; i < allTimes.length; i++) {
+            var currentTimeEl = $(allTimes[i])
+            var currentTextArea = currentTimeEl.siblings(".col-md-9")
+            }
+        }
 ```
 
 
@@ -37,7 +37,7 @@ ______________________________________________________________________________
 
 #### **Deployed Link**
 
-* [See Live Site](https://pamela-gutierrez.github.io/code-refactor/.)
+* [See Live Site](https://pamela-gutierrez.github.io/workday-scheduler/)
 
 ### **Author Links**
 
