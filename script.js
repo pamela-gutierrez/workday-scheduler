@@ -44,65 +44,62 @@ $(document).ready(function () {
             console.log(inputValue)
         });
 
-        $("#9, .text-box").val(localStorage.getItem("9"))
-        $("#10, .text-box").val(localStorage.getItem("10"))
-        $("#11, .text-box").val(localStorage.getItem("11"))
-        $("#12, .text-box").val(localStorage.getItem("12"))
-        $("#13, .text-box").val(localStorage.getItem("13"))
-        $("#14, .text-box").val(localStorage.getItem("14"))
-        $("#15, .text-box").val(localStorage.getItem("15"))
-        $("#16, .text-box").val(localStorage.getItem("16"))
-        $("#17, .text-box").val(localStorage.getItem("17"))
+        // $("#9, .text-box").val(localStorage.getItem("9"))
+        // $("#10, .text-box").val(localStorage.getItem("10"))
+        // $("#11, .text-box").val(localStorage.getItem("11"))
+        // $("#12, .text-box").val(localStorage.getItem("12"))
+        // $("#13, .text-box").val(localStorage.getItem("13"))
+        // $("#14, .text-box").val(localStorage.getItem("14"))
+        // $("#15, .text-box").val(localStorage.getItem("15"))
+        // $("#16, .text-box").val(localStorage.getItem("16"))
+        // $("#17, .text-box").val(localStorage.getItem("17"))
 
 
     });
 
 
-    if (localStorage.getItem("9") === null) {
-
-    } else {
+    if (localStorage.getItem("9") !== null) {
         $("#9").siblings("textarea").text(localStorage.getItem("9"));
     }
 
-    if (localStorage.getItem("10") === null) {
-
-    } else {
+    if (localStorage.getItem("10") !== null) {
         $("#10").siblings("textarea").text(localStorage.getItem("10"));
     }
-    if (localStorage.getItem("11") === null) {
 
-    } else {
+
+    if (localStorage.getItem("11") !== null) {
         $("#11").siblings("textarea").text(localStorage.getItem("11"));
-    }
-    if (localStorage.getItem("9") === null) {
 
-    } else {
+
+    }
+    if (localStorage.getItem("9") !== null) {
         $("#12").siblings("textarea").text(localStorage.getItem("12"));
-    }
-    if (localStorage.getItem("13") === null) {
 
-    } else {
+
+    }
+    if (localStorage.getItem("13") !== null) {
         $("#13").siblings("textarea").text(localStorage.getItem("13"));
     }
-    if (localStorage.getItem("14") === null) {
 
-    } else {
+
+    if (localStorage.getItem("14") !== null) {
         $("#14").siblings("textarea").text(localStorage.getItem(14));
-    }
-    if (localStorage.getItem("15") === null) {
 
-    } else {
+
+    }
+    if (localStorage.getItem("15") !== null) {
         $("#15").siblings("textarea").text(localStorage.getItem("15"));
     }
-    if (localStorage.getItem("16") === null) {
 
-    } else {
+
+    if (localStorage.getItem("16") !== null) {
         $("#16").siblings("textarea").text(localStorage.getItem("16"));
-    }
-    if (localStorage.getItem("17") === null) {
 
-    } else {
+
+    }
+    if (localStorage.getItem("17") !== null) {
         $("#17").siblings("textarea").text(localStorage.getItem("17"));
+
     }
 
 
