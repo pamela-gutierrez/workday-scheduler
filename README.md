@@ -2,7 +2,7 @@
 
 This application is a work day scheduler intended to help the user organize their workday during the typical business hours of 9am to 5pm. 
 
-![Site] (INSERT PIC HERE)
+![alt-text](screen-record.gif)
 
 ## **Built With**
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -20,7 +20,7 @@ ______________________________________________________________________________
 
 #### **Code Snippet**
 
-The color coded time blocks are accomplished using a combination of variables, jQuery selectors, and a for loop. The jQuery selector identifies the class of "id-md-2" in the HTML which holds the differnt times of the day. The following for loop interates through those times and compares it the currentTimeEl which is defined by a moment.js function. I navigated through the DOM tree to arrive at different elements.
+The color coded time blocks are accomplished using a combination of variables, jQuery selectors, and a for loop. The jQuery selector identifies the element with the id of "col-md-2" in the HTML which holds the differnt times of the day. The following for loop interates through those times and compares it the currentTimeEl which is defined by a moment.js function. I navigated through the DOM tree to arrive at different elements.
 
 ```
 var allTimes = $(".col-md-2")
